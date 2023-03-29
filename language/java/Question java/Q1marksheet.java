@@ -15,7 +15,7 @@ public class Q1marksheet{
             e = sc.nextInt();
         }
         float total = a+b+c+d+e;
-        float per = (total/500)*100;
+        float per = (total/500)*100;                              
         if(a<0 || b<0 || c<0 || d<0 || e<0 || a>100 || b>100 || c>100 || d>100 || e>100 ){
             System.out.println("You can't enter the value less then 0 and more then 100");
             per = 00;
