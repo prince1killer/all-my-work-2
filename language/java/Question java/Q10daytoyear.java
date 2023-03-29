@@ -4,9 +4,16 @@ public class Q10daytoyear {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your days = ");
         int day = sc.nextInt();
-        int week,month,year;
-        System.out.println("week = "+ (week = day/7));
-        System.out.println("Month = "+(month =  week/4));
-        System.out.println("Year = "+(year = month/12));
+        int days,a,week,month,year;
+        year = day/365;
+        a = day%365;
+        month = a/30;
+        a = a%30;
+        week = a/7;
+        days = a%7;
+        System.out.println("year = "+year);
+        System.out.println("month = "+month);
+        System.out.println("week = "+week);
+        System.out.println("days = "+days);
     }
 }
