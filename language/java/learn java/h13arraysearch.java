@@ -11,7 +11,7 @@ public class h13arraysearch {
         }
         System.out.println("Enter the finding number = ");
         int number = dc.nextInt();
-        for(int i=0;i<value;i++){
+        for(int i=0;i<=value;i++){
             if(input[i] == number){
                 System.out.println("Its is your place to where you get your number = "+i);
             }
