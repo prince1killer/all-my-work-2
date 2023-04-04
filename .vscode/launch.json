@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q34maxmim",
+            "request": "launch",
+            "mainClass": "Q34maxmim",
+            "projectName": "learn programming_8c45afa4"
+        },
+        {
+            "type": "java",
             "name": "Q8salary",
             "request": "launch",
             "mainClass": "Q8salary",
