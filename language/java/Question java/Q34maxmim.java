@@ -24,9 +24,5 @@ public class Q34maxmim {
             }
             System.out.println("MAX = "+max);
             System.out.println("MIN = "+min);
-            
-     
-
-
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "student",
+            "request": "launch",
+            "mainClass": "student",
+            "projectName": "learn programming_8c45afa4"
+        },
+        {
+            "type": "java",
             "name": "Q34maxmim",
             "request": "launch",
             "mainClass": "Q34maxmim",
