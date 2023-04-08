@@ -1,6 +1,7 @@
 import java.io.*;
 class shoping{
-    int id,quan,total,dis,net,price;
+    int id[] = new int[1];
+    int quan,total,dis,net,price;
     String person_name,item,name;
     void name(){
         try{
@@ -14,7 +15,7 @@ class shoping{
         try{
             DataInputStream dc = new DataInputStream(System.in);
             System.out.print("Enter the Id = ");
-            id = Integer.parseInt(dc.readLine());
+             id = Integer.parseInt(dc.readLine());
             System.out.print("Enter the product name = ");
             item = dc.readLine();
             System.out.print("Enter the price = ");
