@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* .shpoping-main{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue;    
+} */
+.btn12{
+    width: 100px;
+    height: 30px;
+    background-color: chartreuse;
+
+}

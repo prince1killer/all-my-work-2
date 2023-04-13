@@ -12,22 +12,25 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/main">Main</Link>
+          <Link className="nav-link active" aria-current="page" to="/">AddNumber</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/about">about</Link>
+          <Link className="nav-link active" aria-current="page" to="/cal">Multcal</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/blog">blog</Link>
+          <Link className="nav-link active" aria-current="page" to="/shop">Shoping</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/team">team</Link>
+          <Link className="nav-link active" aria-current="page" to="/check">Checked</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/link">link</Link>
+          <Link className="nav-link active" aria-current="page" to="/drop">Drop</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/game">game</Link>
+          <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/session">session</Link>
         </li>
       </ul>
       <form className="d-flex" role="search">

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "h26static2",
+            "request": "launch",
+            "mainClass": "h26static2",
+            "projectName": "learn programming_8c45afa4"
+        },
+        {
+            "type": "java",
             "name": "try1",
             "request": "launch",
             "mainClass": "try1",
