@@ -9,6 +9,8 @@ import Check from './components/Check';
 import Drop from './components/Drop';
 import Login from './components/Login';
 import Session from './components/Session';
+import Session1 from './components/Session1';
+import Radiobtn from './components/Radiobtn';
 
 
 function Home() {
@@ -23,6 +25,9 @@ function Home() {
             <Route path="/drop" element={<Drop/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path='/session' element={<Session/>}></Route>
+            <Route  element={<Session1/>}></Route>
+            <Route path='/radio' element={<Radiobtn/>}></Route>
+
         </Routes>
         {/* <div className='Home'>Home route</div> */}
     

@@ -7,10 +7,17 @@
     <title>Session storage</title>
 </head>
 <body>
-    <label>Enter your name = </label><input type='text' placeholder='Enter the name'/><br/>
-        <label>Enter your Email = </label><input type='text' placeholder='Enter the Email'/><br/>
-        <label>Enter your phone Number= </label><input type='number' placeholder='Enter the phone Number'/><br/>
-        <label>Enter your address = </label><input type='text' placeholder='Enter the address'/><br/>
-        <label>Enter your passwors = </label><input type='text' placeholder='Enter the password'/><br/>
+    <label>Enter your name = </label><input type='text' id="s1" placeholder='Enter the name'/><br/>
+        <label>Enter your Email = </label><input type='text' id="s2" placeholder='Enter the Email'/><br/>
+        <label>Enter your phone Number= </label><input type='number' id="s3" placeholder='Enter the phone Number'/><br/>
+        <label>Enter your address = </label><input type='text' id="s4" placeholder='Enter the address'/><br/>
+        <label>Enter your passwors = </label><input type='text' id="s5" placeholder='Enter the password'/><br/>
 </body>
+<script>
+    s1.value = sessionStorage.getItem("t1");
+    s2.value = sessionStorage.getItem("t2");
+    s3.value = sessionStorage.getItem("t3");
+    s4.value = sessionStorage.getItem("t4");
+    s5.value = sessionStorage.getItem("t5");
+</script>
 </html>
