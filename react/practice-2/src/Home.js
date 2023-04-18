@@ -11,6 +11,9 @@ import Login from './components/Login';
 import Session from './components/Session';
 import Session1 from './components/Session1';
 import Radiobtn from './components/Radiobtn';
+import Oddeven from './components/Oddeven';
+import Amstrong from './components/Amstrong';
+import Multytable from './components/Multytable';
 
 
 function Home() {
@@ -27,7 +30,9 @@ function Home() {
             <Route path='/session' element={<Session/>}></Route>
             <Route  element={<Session1/>}></Route>
             <Route path='/radio' element={<Radiobtn/>}></Route>
-
+            <Route path="/even" element={<Oddeven/>}></Route>
+            <Route path='/amg' element={<Amstrong/>}></Route>
+            <Route path='/multi' element={<Multytable/>}></Route>
         </Routes>
         {/* <div className='Home'>Home route</div> */}
     

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back</title>
+</head>
+<body>
+    Enter you name = <input type="text"  class="name"> <br/>
+    <button onclick="btn1()">Click</button> <br>
+    <label id="lb1"></label>  
+
+</body>
+<script>
+   let name = document.querySelector(".name");
+   let ans = document.getElementById("lb1");
+//    ans.innerHTML(1); 
+   
+    function btn1(){
+        console.log(name.value)
+        ans.innerHTML = name.value;
+        
+    }
+
+
+</script>
+</html>
