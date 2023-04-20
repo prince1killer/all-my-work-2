@@ -28,7 +28,7 @@ function Home() {
             <Route path="/drop" element={<Drop/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path='/session' element={<Session/>}></Route>
-            <Route  element={<Session1/>}></Route>
+            <Route path='/session1'  element={<Session1/>}></Route>
             <Route path='/radio' element={<Radiobtn/>}></Route>
             <Route path="/even" element={<Oddeven/>}></Route>
             <Route path='/amg' element={<Amstrong/>}></Route>

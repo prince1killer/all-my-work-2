@@ -6,11 +6,13 @@ function Session1() {
     const [s3,sets3] = useState("");
     const [s4,sets4] = useState("");
     const [s5,sets5] = useState("");
-    s1 = sessionStorage.getItem("t1");
-    s2 = sessionStorage.getItem("t2");
-    s3 = sessionStorage.getItem("t3");
-    s4 = sessionStorage.getItem("t4");
-    s5 = sessionStorage.getItem("t5");
+    sets1 = sessionStorage.getItem("t1");
+    sets2 = sessionStorage.getItem("t2");
+    sets3 = sessionStorage.getItem("t3");
+    sets4 = sessionStorage.getItem("t4");
+    sets5 = sessionStorage.getItem("t5");
+
+
   return (
     <div>
         <label>Enter your name = </label><input type='text' id="s1" value={s1} onChange={(e)=>sets1(e.target.value)} placeholder='Enter the name'/><br/>

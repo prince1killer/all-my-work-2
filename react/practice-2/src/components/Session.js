@@ -12,6 +12,9 @@ function Session() {
 
     const click1 = () => {
         console.log(23+34)
+        console.log(t1)
+        console.log(t2)
+        console.log(t3)
         sessionStorage.setItem("t1",t1);
         sessionStorage.setItem("t2",t2);
         sessionStorage.setItem("t3",t3);
@@ -19,7 +22,7 @@ function Session() {
         sessionStorage.setItem("t5",t5);
 
 
-        window.localStorage.href='Session1.html';
+        window.localStorage.href='Session1.js';
     } 
 
 

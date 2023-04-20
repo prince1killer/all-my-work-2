@@ -44,6 +44,9 @@ function Navbar() {
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/multi">MultyTable</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/session1">Table</Link>
+        </li>
       </ul>
       
     </div>
