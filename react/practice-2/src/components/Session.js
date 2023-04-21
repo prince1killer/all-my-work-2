@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 function Session() {
      
     
@@ -21,8 +20,8 @@ function Session() {
         sessionStorage.setItem("t4",t4);
         sessionStorage.setItem("t5",t5);
 
-
-        window.localStorage.href='Session1.js';
+        // window.sessionStorage.href="Session1.js" 
+        window.location.href= 'session1';
     } 
 
 
