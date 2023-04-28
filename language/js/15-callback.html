@@ -13,15 +13,28 @@
 
 </body>
 <script>
+    // the callback function is a function pass into another function as an argument 
+    //which invock insid the outer functiion to complet an action 
+
+    //LIKE:- finction inside the function 
+    
+
+
    let name = document.querySelector(".name");
    let ans = document.getElementById("lb1");
-//    ans.innerHTML(1); 
-   
-    function btn1(){
-        console.log(name.value)
-        ans.innerHTML = name.value;
-        
-    }
+
+   function loadscript(src,callback1){
+    console.log("this is the function of callback");
+    callback1();
+    // window.location.href=src;
+    console.log(src)
+}
+
+function btn1(){
+    console.log(name.value)
+    ans.innerHTML = name.value;        
+}
+loadscript("https://www.getbootstrap.com",btn1)
 
 
 </script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback project 1</title>
+</head>
+<body>
+    <!-- <h1>Practice 1 of callback</h1>
+    <h2>Adding multiple or more two number using callback function</h2>
+    Enter the number 1 = <input type="number" id="sum1" placeholder="Enter the numbar 1"><br>
+    Enter the number 2 = <input type="number" id="sum2" placeholder="Enter the numbar 1"><br>
+    <button onclick="sumclick()">sum</button><br>
+    adding =<input type="number" id="sum" placeholder="Enter the numbar 1"><br>
+    <button onclick="clear()">clear</button> -->
+</body>
+<script>
+    function loadscript(src, callbac){
+        let script = document.createElement("script");
+        script.src = src;
+        script.onload = function(){
+            console.log("loaded script with SRC : "+src);
+            callbac(src);
+        };
+        document.body.appendChild(script);
+    }
+    function hello(src){
+
+        prompt("Hello world "+ src);
+    }
+    function goodmorning(){
+        alert("goodmorning");
+    }
+    loadscript("https://www.google.com",hello)
+    
+</script>
+</html>
