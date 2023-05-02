@@ -1,27 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
+let num = 5;
 function Multytable() {
+  // const [table,setTable] = useState(0)
+  // useEffect(()=>{
+  //   let newtable = 0; 
+  //   for(let i=1;i<=10;i++){
 
-    const [table, seTable] = useState();
-    const [txtv1, setTxtv1] = useState();
-    // const click12 = () => {};
-    useEffect(()=>{ 
-        // function click112(){
-            for(let i=0;i<=txtv1;i++){
-             
-                seTable( txtv1+" X "+i+" = "+(Number(txtv1)*i));        
-            }
-        // }
-    })
+  //      newtable += +<br/>
+       
+  //   }
+  //   setTable(newtable);  
+
+  // },[])
+
+
   return (
-
-
-    <div>
-        <label>Enter the number = </label><input type='text' value={txtv1} onChange={(e)=>setTxtv1(e.target.value)}></input> <br/>
-        <button type='button'  >Click</button>
-        <p className='table'>{table}</p>    
-    </div>
+    new Array(10).fill("").map((_, idx) => {
+      const number = idx + 1
+      return <>
+      
+        <p>{`${num} x ${number} = ${num * number}`}</p>
+      
+      </>
+    })
   )
+
+  // return (
+  //   <div>{table}</div>
+  // )
 }
 
 export default Multytable
