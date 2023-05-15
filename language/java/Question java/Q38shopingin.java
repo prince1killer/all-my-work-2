@@ -42,7 +42,7 @@ class shoping{
 }
 public class Q38shopingin {
     public static void main(String []ages){
-        try{
+    try{
             DataInputStream sc  =new DataInputStream(System.in);
             System.out.print("Enter number of persons = ");
             int person = Integer.parseInt(sc.readLine());

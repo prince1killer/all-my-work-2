@@ -1,18 +1,19 @@
 import './App.css';
-import Addition from './components/Addition';
-// import About from './components/About';
-// import Blog from './components/Blog';
-// import Contect from './components/Contect';
-// import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
 // import Home from './components/Home';
-// import Navbar from './components/Navbar';
+import News from './components/News';
 
 function App() {
   return (
-    <div className="App">
-     <Addition/>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        {/* <Route path='/' element={<Home/>}></Route> */}
+        <Route path='/' element={<News/>}></Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

@@ -11,7 +11,8 @@ public class Q34maxmim {
             }
 
             for(int i=0;i<=info.length-1;i++){
-                for(int j=i+1;j<=info.length-1;j++){
+                for(int j=i+1;j<=
+                -1;j++){
                     if(info[i] < info[j]){
                         temp = info[i];
                         info[i] = info[j];
