@@ -5,7 +5,7 @@ int main(){
     int num = 45;
     int num1 = 34;
     int *poi = &num; 
-    printf("%p",poi)
+    printf("%p",poi);
 
-    return 3;
+    return 0;
 }
