@@ -1,0 +1,28 @@
+﻿#Registration {
+    background-color: white;
+    
+    padding: 5%;
+}
+
+.work {
+    height: 100%;
+    width: 100%;
+}
+
+#fname,#lname,#uname,#emailid,#pass1,#pass2 {
+    width: 90%;
+    border: none;
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0% 0% 2% 0%;
+    box-shadow: 0 .5px .1px 1px black;
+}
+
+#btn {
+    padding: 1% 2%;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
