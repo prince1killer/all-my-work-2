@@ -18,7 +18,7 @@ public partial class login_registration : System.Web.UI.Page
 
 
     void myReg() {
-        con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|Datadirectory|product_data.mdf;Integrated Security=True");
+        con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|datadirectory|product_data.mdf;Integrated Security=True");
         con.Open();
     }
 
@@ -30,16 +30,34 @@ public partial class login_registration : System.Web.UI.Page
 
     protected void btn_Click(object sender, EventArgs e)
     {
-
-
+        myReg();
+        cmd = new SqlCommand("insert into reg value(@fn,@ln,@img,@unam,@email,@pass)",con);
+        cmd.Parameters.AddWithValue("@fn",fname.Text);
+        cmd.Parameters.AddWithValue("@ln", lname.Text);
         if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0)) { 
             string fn = Path.GetFileName(FileUpload1.PostedFile.FileName);
             string SaveLocation = Server.MapPath("../Image/")+fn;
+            cmd.Parameters.AddWithValue("@img",fn);
             FileUpload1.PostedFile.SaveAs(SaveLocation);
             Image1.ImageUrl = "../Image/" + fn;
-            Response.Write("<script>alert('successfully upload');</script>");
+            Response.Write("<script>alert('successfully install');</script>");
         }
-
+        else{
+            Response.Write("<script>alert('please upload img');</script>");
+        }
+        cmd.Parameters.AddWithValue("@unam",uname.Text);
+        cmd.Parameters.AddWithValue("@email",emailid.Text);
+        if (pass1.Text == pass2.Text)
+        {
+            cmd.Parameters.AddWithValue("@pass",pass1.Text);
+        }
+        else {
+            Response.Write("< script > alert('please write same password');</ script >");
+            pass1.Text = "";
+            pass2.Text = "";
+        }
+        cmd.ExecuteNonQuery();
+        con.Close();
     }
 
     protected void FileUpload1_Load(object sender, EventArgs e)
