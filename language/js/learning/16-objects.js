@@ -16,4 +16,3 @@ person.age = 50;
 peraon_eyeColor = "blue";
 
 console.log(person.first_name, person.last_name , person.age,peraon_eyeColor);
-

@@ -31,12 +31,21 @@ public partial class login_registration : System.Web.UI.Page
     protected void btn_Click(object sender, EventArgs e)
     {
         myReg();
-        cmd = new SqlCommand("insert into reg value(@fn,@ln,@img,@unam,@email,@pass)",con);
+        cmd = new SqlCommand("insert into reg values(@fn,@ln,@img,@unam,@email,@pass)",con);
         cmd.Parameters.AddWithValue("@fn",fname.Text);
         cmd.Parameters.AddWithValue("@ln", lname.Text);
-        if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0)) { 
+        String createfolder = Server.MapPath(String.Format("../Image/{0}/",uname.Text));
+        if (!Directory.Exists(createfolder))
+        {
+            Directory.CreateDirectory(createfolder);
+            Label1.Text = "folder " + createfolder + " Created successfully";
+        }
+        else {
+            Label1.Text = "please give correct path";
+        }
+            if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0)) { 
             string fn = Path.GetFileName(FileUpload1.PostedFile.FileName);
-            string SaveLocation = Server.MapPath("../Image/")+fn;
+            string SaveLocation = Server.MapPath("../Image/"+uname.Text+"/")+fn;
             cmd.Parameters.AddWithValue("@img",fn);
             FileUpload1.PostedFile.SaveAs(SaveLocation);
             Image1.ImageUrl = "../Image/" + fn;
@@ -56,8 +65,12 @@ public partial class login_registration : System.Web.UI.Page
             pass1.Text = "";
             pass2.Text = "";
         }
+
+        
+
         cmd.ExecuteNonQuery();
         con.Close();
+        Response.Redirect("");
     }
 
     protected void FileUpload1_Load(object sender, EventArgs e)

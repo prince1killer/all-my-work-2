@@ -62,11 +62,12 @@
                     Enter your first name <br /> <asp:TextBox ID="fname" runat="server" ></asp:TextBox><br />
                     Enter your last name <br /> <asp:TextBox ID="lname" runat="server"></asp:TextBox><br />
                     Choose your photo <asp:FileUpload ID="FileUpload1" runat="server" OnLoad="FileUpload1_Load" /><asp:Image ID="Image1" runat="server" Width="120px" Height="150px" AlternateText="Your image" /><br />
-                    Enter your username  <asp:TextBox ID="uname" runat="server"></asp:TextBox><br />
-                    Enter your Email  <asp:TextBox ID="emailid" runat="server" TextMode="Email"></asp:TextBox><br />
-                    Enter your password  <asp:TextBox ID="pass1" runat="server" TextMode="Password"></asp:TextBox><br />
-                    Re-enter password  <asp:TextBox ID="pass2" runat="server" TextMode="Password"></asp:TextBox><br />
-                    <asp:Button ID="btn" runat="server" Text="Button" OnClick="btn_Click" />
+                    Enter your username<br />  <asp:TextBox ID="uname" runat="server"></asp:TextBox><br />
+                    Enter your Email<br />  <asp:TextBox ID="emailid" runat="server" TextMode="Email"></asp:TextBox><br />
+                    Enter your password<br />  <asp:TextBox ID="pass1" runat="server" TextMode="Password"></asp:TextBox><br />
+                    Re-enter password<br /><asp:TextBox ID="pass2" runat="server" TextMode="Password"></asp:TextBox><br />
+                    <asp:Button ID="btn" runat="server" Text="Button" OnClick="btn_Click" /><br />
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
 
                 </div>
