@@ -1,15 +1,14 @@
-﻿using demo2.Models;
+﻿using DocumentFormat.OpenXml.Drawing.Diagrams;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace demo2.Data
 {
-    public class ApplicationDataContect:DbContext
+    public class ApplicationDataContect : DbContext
     {
-        public ApplicationDataContect(DbContextOptions<ApplicationDataContect> options ) : base(options)
+        public ApplicationDataContect(DbContextOptions<ApplicationDataContect> options) : base(options)
         {
-        
+
         }
-        public DataSet<Category>
+        public DbSet<Category> Categories { get; set; }
     }
 }
